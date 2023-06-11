@@ -53,4 +53,39 @@ foreach ($colors as $key=>$value) {
     echo "$key $value<br>";
 }
 
+// creating function with and without parameters.
+
+// without
+
+function helloWorld() {
+    echo "<h1>Hello world</h1>";
+}
+
+echo "Printing func without parameters.";
+helloWorld();
+echo "<br> Printing hello world func with params ";
+function helloWorldWithParam($h,$w) {
+    echo "<br>$h $w";
+}
+
+helloWorldWithParam('Hello','World!');
+
+// Writeing func with link on param, for change.
+
+echo "<h1>Func with link on params for change it.</h1>";
+
+$start = 0;
+echo "<br>";
+echo "$start";
+
+function changeStart(&$st) {
+    $st +=10;
+}
+
+changeStart($start);
+echo "<br>";
+echo "$start";
+
+// fucntion with return elements
+
 ?>
